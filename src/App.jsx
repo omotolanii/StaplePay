@@ -104,10 +104,10 @@ const StaplePayApp = () => {
               Buy staples at wholesale prices. Pay across paydays. Save up to 35% on every order with zero upfront cost.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              {/* <button onClick={() => setCurrentPage('calculator')} className="text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center" style={{ background: 'linear-gradient(to right, #f97316, #ea580c)' }}>
+              { <button onClick={() => setCurrentPage('/calculator')} className="text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center" style={{ background: 'linear-gradient(to right, #f97316, #ea580c)' }}>
                 Calculate Your Savings <ArrowRight className="ml-2 w-5 h-5" />
-              </button> */}
-              <button onClick={() => setCurrentPage('catalog')} className="bg-white text-teal-700 border-2 border-teal-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-teal-50">
+              </button> }
+              <button onClick={() => setCurrentPage('/catalog')} className="bg-white text-teal-700 border-2 border-teal-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-teal-50">
                 Browse Products
               </button>
             </div>
@@ -152,7 +152,7 @@ const StaplePayApp = () => {
                   <div className="text-sm text-gray-600 mt-2">with wholesale pricing</div>
                 </div>
 
-                <button onClick={() => setCurrentPage('calculator')} className="w-full text-white py-4 rounded-xl font-bold" style={{ background: 'linear-gradient(to right, #0d9488, #0f766e)' }}>
+                <button onClick={() => setCurrentPage('/calculator')} className="w-full text-white py-4 rounded-xl font-bold" style={{ background: 'linear-gradient(to right, #0d9488, #0f766e)' }}>
                   See Full Breakdown
                 </button>
               </div>
@@ -215,13 +215,13 @@ const StaplePayApp = () => {
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
-              <button onClick={() => setCurrentPage('landing')} className="flex items-center space-x-2">
+              <button onClick={() => setCurrentPage('/landing')} className="flex items-center space-x-2">
                 <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: 'linear-gradient(to bottom right, #0d9488, #115e59)' }}>
                   <Package className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-2xl font-bold" style={{ background: 'linear-gradient(to right, #0d9488, #115e59)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>StaplePay</span>
               </button>
-              <button onClick={() => setCurrentPage('catalog')} className="text-white px-6 py-2 rounded-lg font-semibold" style={{ background: 'linear-gradient(to right, #f97316, #ea580c)' }}>
+              <button onClick={() => setCurrentPage('/catalog')} className="text-white px-6 py-2 rounded-lg font-semibold" style={{ background: 'linear-gradient(to right, #f97316, #ea580c)' }}>
                 <ShoppingCart className="w-5 h-5 inline mr-2" />
                 Cart ({cartItems.length})
               </button>
