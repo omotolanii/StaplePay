@@ -104,9 +104,9 @@ const StaplePayApp = () => {
               Buy staples at wholesale prices. Pay across paydays. Save up to 35% on every order with zero upfront cost.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button onClick={() => setCurrentPage('calculator')} className="text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center" style={{ background: 'linear-gradient(to right, #f97316, #ea580c)' }}>
+              {/* <button onClick={() => setCurrentPage('calculator')} className="text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center" style={{ background: 'linear-gradient(to right, #f97316, #ea580c)' }}>
                 Calculate Your Savings <ArrowRight className="ml-2 w-5 h-5" />
-              </button>
+              </button> */}
               <button onClick={() => setCurrentPage('catalog')} className="bg-white text-teal-700 border-2 border-teal-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-teal-50">
                 Browse Products
               </button>
